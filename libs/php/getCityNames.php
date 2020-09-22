@@ -17,6 +17,7 @@ if (!empty($_REQUEST['q']))
 $q = $_REQUEST["q"];
 
 $hint = "";
+$count = 0;
 
 // lookup all hints from array if $q is different from ""
 if ($q !== "") {
@@ -29,6 +30,9 @@ if ($q !== "") {
       } else {
         $hint .= ", $name";
       }
+      $count = $count + 1;
+      if ($count == 10)
+      {break;}
     }
   }
 }
