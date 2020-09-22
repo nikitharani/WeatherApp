@@ -1,0 +1,13 @@
+body{
+    
+background:url('./images/wthr.jpg') no-repeat center center fixed;
+background-repeat:no-repeat;
+background-size:cover;
+    }
+    
+
+
+tr td:nth-child(1){
+    font-weight: 700;
+    color:green;
+}
